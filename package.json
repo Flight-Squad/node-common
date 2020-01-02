@@ -1,0 +1,11 @@
+{
+  "name": "@flight-squad/common",
+  "version": "1.0.0",
+  "description": "Interfaces shared among other Flight Squad modules and services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pujit Mehrotra",
+  "license": "SEE LICENSE IN LICENSE"
+}
