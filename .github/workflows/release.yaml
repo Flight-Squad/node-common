@@ -6,11 +6,13 @@ on:
 
 jobs:
   publish-gpr:
-    # needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Checkout Master
+        uses: actions/checkout@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
           node-version: 13
           registry-url: https://npm.pkg.github.com/
@@ -24,6 +26,3 @@ jobs:
           npm ci
           npm config set //npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN
           npm publish
-          
-      
-        
