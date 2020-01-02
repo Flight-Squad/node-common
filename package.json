@@ -1,10 +1,12 @@
 {
   "name": "@flight-squad/common",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Interfaces shared among other Flight Squad modules and services",
   "main": "index.js",
   "repository": "https://github.com/Flight-Squad/node-common",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@flight-squad" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@flight-squad"
+  },
   "scripts": {
     "build": "tsc",
     "build:check": "tsc --noEmit",
