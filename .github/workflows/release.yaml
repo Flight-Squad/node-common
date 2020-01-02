@@ -23,6 +23,7 @@ jobs:
         run: |
           npm ci
           npm config set //npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN
+          npm publish
           
       
         
