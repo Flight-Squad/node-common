@@ -1,0 +1,1 @@
+export const FlightSquadCommonName = 'test-common-name';
