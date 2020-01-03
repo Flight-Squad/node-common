@@ -2,7 +2,8 @@
   "name": "@flight-squad/common",
   "version": "0.0.3",
   "description": "Interfaces shared among other Flight Squad modules and services",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "repository": "https://github.com/Flight-Squad/node-common",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@flight-squad"
