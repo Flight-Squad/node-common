@@ -1,1 +1,1 @@
-export const FlightSquadCommonName = 'test-common-name';
+export * from './flightsquad';
