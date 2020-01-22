@@ -1,10 +1,9 @@
-export enum TransactionStatus {
-    Created,
-    Pending,
-    Processed,
-    Failed,
+export declare enum TransactionStatus {
+    Created = 0,
+    Pending = 1,
+    Processed = 2,
+    Failed = 3
 }
-
 export interface CreateTransactionFields {
     /** Amount to charge in USD */
     amount: number;
