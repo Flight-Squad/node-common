@@ -12,5 +12,5 @@ export interface CreateTransactionFields {
     amount: number;
     /** customer id */
     customer: string;
-    trip: Trip;
+    trip: Omit<Trip, 'provider'>;
 }
