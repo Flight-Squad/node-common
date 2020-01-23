@@ -1,3 +1,4 @@
+import { Trip } from "./trip";
 export declare enum TransactionStatus {
     Created = 0,
     Pending = 1,
@@ -9,4 +10,5 @@ export interface CreateTransactionFields {
     amount: number;
     /** customer id */
     customer: string;
+    trip: Trip;
 }
