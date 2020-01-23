@@ -1,4 +1,5 @@
 import Axios from 'axios';
+import { CreateTransactionFields } from './transaction';
 
 export interface Charge {
     /** Public Payment Token from Payment Processor */
@@ -15,7 +16,8 @@ export interface Charge {
 export class Pricesquad {
     constructor(readonly apiRoot: string) { }
     readonly tx = {
-        get: async (txId: string) => (await Axios.get(`${this.apiRoot}/${txId}/`)).data,
+        get: async (txId: string) => (await Axios.get(`${this.apiRoot}//transactions/${txId}`)).data,
+        create: async (params: CreateTransactionFields) => (await Axios.post(`${this.apiRoot}/transactions/`, params)).data,
     }
 
     readonly charge = {
