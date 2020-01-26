@@ -1,4 +1,4 @@
-import { CreateTransactionFields } from './transaction';
+import { CreateTransactionFields, CreateTransactionResponse } from './transaction';
 export interface Charge {
     /** Public Payment Token from Payment Processor */
     token: string;
@@ -15,7 +15,7 @@ export declare class Pricesquad {
     constructor(apiRoot: string);
     readonly tx: {
         get: (txId: string) => Promise<any>;
-        create: (params: CreateTransactionFields) => Promise<any>;
+        create: (params: CreateTransactionFields) => Promise<CreateTransactionResponse>;
     };
     readonly charge: {
         card: (params: ChargeCard) => Promise<any>;
