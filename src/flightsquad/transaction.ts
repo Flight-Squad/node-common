@@ -12,5 +12,11 @@ export interface CreateTransactionFields {
     amount: number;
     /** customer id */
     customer: string;
-    trip: Omit<Trip, 'provider'>;
+    trip: Trip;
+}
+
+export interface CreateTransactionResponse {
+    transaction;
+    /** url for payment page */
+    url: string;
 }
