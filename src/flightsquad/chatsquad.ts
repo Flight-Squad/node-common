@@ -1,7 +1,7 @@
 import { CreateTransactionResponse } from "./transaction";
 import Axios from "axios";
 import { ExtendRouter } from "../router";
-import { Trip } from "./trip";
+import { Trip, TripGroupQuery } from "./trip";
 
 export interface PaymentMessageReq {
     /** messaging platform */
@@ -10,6 +10,7 @@ export interface PaymentMessageReq {
     id: string;
     payment: CreateTransactionResponse;
     trip: Trip;
+    query: TripGroupQuery;
 }
 
 export interface SendMessageReq {

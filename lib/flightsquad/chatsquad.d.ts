@@ -1,5 +1,5 @@
 import { CreateTransactionResponse } from "./transaction";
-import { Trip } from "./trip";
+import { Trip, TripGroupQuery } from "./trip";
 export interface PaymentMessageReq {
     /** messaging platform */
     platform: string;
@@ -7,6 +7,7 @@ export interface PaymentMessageReq {
     id: string;
     payment: CreateTransactionResponse;
     trip: Trip;
+    query: TripGroupQuery;
 }
 export interface SendMessageReq {
     /** messaging platform */
