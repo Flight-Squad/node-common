@@ -1,6 +1,6 @@
 {
   "name": "@flight-squad/common",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Interfaces shared among other Flight Squad modules and services",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
