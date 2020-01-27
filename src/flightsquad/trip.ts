@@ -11,6 +11,7 @@ export interface Trip {
     stops: TripStop[];
     /** Search Provider (aka scraping module) */
     provider: SearchProviders;
+    query: TripGroupQuery;
 }
 
 export interface TripStop {
@@ -20,6 +21,21 @@ export interface TripStop {
     arrivalTime: string;
     departTime: string;
     duration: string;
+}
+
+export interface TripGroupQuery {
+    origin: string;
+    dest: string;
+    departDate: string | Date;
+    returnDate?: string | Date;
+    isRoundTrip: boolean;
+    stops: FlightStops | string | number;
+}
+
+export enum FlightStops {
+    NonStop,
+    OneStop,
+    AnyStops,
 }
 
 /** Search Providers enabled
